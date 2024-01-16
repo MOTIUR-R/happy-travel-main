@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;700&family=Poppins:wght@400;500;600;700;900&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+.nav-container{
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.nav-content{
+    margin-right: 15px;
+    
+}
+.nav-container ul{
+    display: flex;
+    gap: 1.35rem;
+}
+.nav-content a{
+    text-decoration: none;
+    font-size: 19px;
+    color: #424247;
+    gap: 15px;
+    
+}
+.home span{
+    color: #FF5400;
+    font-size: 19px
+}
+
+.header-section{
+    max-width: 1250px;
+    margin: 0 auto;
+    
+}
+
+.header-section{
+    position: relative;
+    background-image: linear-gradient(to bottom,#131318, #13131800),url(./Images/headerimg.png);
+    width: 90%;
+    width: 1170px;
+    height: 500px;
+    border-radius: 16px;
+
+}
+
+.header-container{
+    position: absolute;
+    margin-top: -370px;
+    margin-left: 440px;
+}
+.header-content-title{
+    color: #FFF;
+    font-size: 64px;
+    background-clip: text;
+    position: relative;
+}
+.header-descripion{
+    margin-top: 0%;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.btn-container{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -115px;
+    margin-left: 425px;
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+.btn-container input{
+    border: none;
+}
+.btn-container select{
+    border: none;
+}
+#when-section{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #FFF;
+    margin: 5px;
+    border: none;
+    outline: none;
+    
+}
+.select-none{
+    border: none;
+    text-decoration: none;
+}
+
+
+
+.popular-section{
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.popular-content{
+    margin-top: 4px;
+    line-height: 28px;
+}
+.popular-heading{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+}
+.popular-description{
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+}
+.btn-primary{
+    margin-top: 15px;
+    width: 174px;
+    height: 52px;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+}
+
+
+
+
+@media screen and (max-width:600px){
+
+    .nav-container{
+        max-width: 600px;
+        margin: 0 auto;
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+        
+        
+    }
+
+    .header-section{
+        max-width: 600px;
+        margin: 0 auto;
+        background-image: linear-gradient(to bottom,#131318, #13131800),url(./Images/headerimg.png);
+        width: 100%;
+        width: 520px;
+        object-fit: cover;
+        border-radius: 16px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        position: absolute;
+        margin-top: -500px;
+        margin-left: 50px;
+      
+        
+       
+    }
+    .header-content-title{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+        margin: 0 auto;
+      }
+
+      .btn-container{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        column-gap: 2px;
+        position: absolute;
+        margin-top: -250px;
+        margin-left: 100px;
+        padding: 6px;
+        gap: 4px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.30);
+    }
+
+    .popular-section{
+        order: 1;
+        max-width: 600px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .popular-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-img-section{
+        margin-left: 80px;
+        margin-top: 20px
+        
+    }
+
+    body{
+        max-width: 600px;
+    }
+}
